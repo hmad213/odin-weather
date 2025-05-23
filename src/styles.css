@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body > h1 {
+  padding: 20px 0px;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 30px;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+}
+
+form input {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: 400px;
+}
+
+form button {
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  border: solid 2px black;
+  background-color: rgb(66, 66, 247);
+  border-radius: 25px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(28, 28, 255);
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.error img {
+  height: 300px;
+}
+
+.error span {
+  font-size: 24px;
+}
+
+.weather-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.current-data {
+  display: flex;
+  width: 500px;
+  height: 200px;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 15px;
+}
+
+.current-data img {
+  height: 150px;
+  width: 150px;
+}
+
+.current-data .description,
+.current-data .temperature,
+.current-data .extra-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.current-data .description,
+.current-data .extra-details {
+  justify-content: space-between;
+}
+
+.current-data .temperature {
+  justify-content: center;
+  width: 25%;
+  font-size: 30px;
+  padding-bottom: 70px;
+}
+
+.current-data .description {
+  width: 30%;
+  align-items: center;
+  font-size: 18px;
+}
+
+.current-data .extra-details {
+  width: 35%;
+}
+
+.current-data .extra-details > .detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.next-data {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  column-gap: 30px;
+}
+
+.next-data .day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.next-data .day > img {
+  width: 60px;
+}
+
+.next-data .day > span {
+  font-weight: 600;
+}
