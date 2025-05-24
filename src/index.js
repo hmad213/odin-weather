@@ -163,7 +163,7 @@ function createForecastCard(data, index) {
   dayHeading.textContent = days[indexDate.getDay()];
 
   const img = document.createElement("img");
-  const iconName = imgSrc[data.currentConditions.icon] || "default";
+  const iconName = imgSrc[day.icon] || "default";
 
   import(`./images/${iconName}`)
     .then((module) => {
